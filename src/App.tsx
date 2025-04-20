@@ -1,5 +1,5 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { QueryClient } from '@tanstack/react-query';
 import About from './pages/About/about';
 import Register from './pages/Register/register';
 import Login from './pages/Login/login';
@@ -28,7 +28,6 @@ const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
 const App = () => {
 
     const content = (
-        <QueryClientProvider client={queryClient}>
             <Routes>
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
@@ -131,7 +130,6 @@ const App = () => {
                 />
                 <Route path="*" element={<Navigate to="/error" />} />
             </Routes>
-        </QueryClientProvider>
     );
 
     return content;

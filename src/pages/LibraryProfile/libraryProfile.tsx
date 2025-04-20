@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getAccessToken, getRefreshToken, refreshAccessToken } from "../../utils/auth";
+import { getAccessToken, refreshAccessToken } from "../../utils/auth";
 import Header from '../Header/header';
 import Footer from '../Footer/footer';
 import "../../styles/libraryprofile.scss";
