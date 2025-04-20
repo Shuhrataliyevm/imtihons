@@ -1,5 +1,4 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-import { QueryClient } from '@tanstack/react-query';
 import About from './pages/About/about';
 import Register from './pages/Register/register';
 import Login from './pages/Login/login';
@@ -14,7 +13,6 @@ import Books from './pages/Books/books';
 import AddBook from './pages/AddBook/addbook';
 import OneAddBook from'./pages/OneAddBook/oneaddbook'
 import LibraryList from './pages/LibraryList/libraryList';
-const queryClient = new QueryClient();
 
 const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
     const token = localStorage.getItem('token');
