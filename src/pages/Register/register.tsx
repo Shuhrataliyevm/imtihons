@@ -83,7 +83,7 @@ const handleSubmit = async (e: React.FormEvent) => {
     if (!response.ok) throw new Error(data.message || "Xatolik yuz berdi");
 
     toast.success("Muvaffaqiyatli ro‘yxatdan o‘tildi");
-    navigate("/login");
+    navigate("/");
     } catch (err: any) {
     toast.error(err.message);
     } finally {
