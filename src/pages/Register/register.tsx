@@ -1,3 +1,14 @@
+
+function register() {
+  return (
+    <div>register</div>
+  )
+}
+
+export default register
+
+
+
 // import React, { useState } from "react";
 // import { useNavigate } from "react-router-dom";
 // import { toast } from "sonner";
