@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "../pages/Home/home";
 import Login from "../pages/Login/login";
-// import Register from "../pages/Register/register";
+import Register from "../pages/Register/register";
 import PrivateRoute from "./PrivateRoute";
 import Error from "../pages/Error/error";
 import About from "../pages/About/about";
@@ -32,7 +32,7 @@ const Router = () => {
 
             <Route path="/" element={<PrivateRoute />}>
                 <Route path="/login" element={<Login />} />
-                {/* <Route path="/register" element={<Register />} /> */}
+                <Route path="/register" element={<Register />} />
             </Route>
             <Route path="*" element={<Error />} />
         </Routes>
