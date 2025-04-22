@@ -17,7 +17,7 @@ import LibraryList from './pages/LibraryList/libraryList';
 const queryClient = new QueryClient();
 
 const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
-    const token = localStorage.getItem('token');
+    const token = localStorage.getItem('access_token');
     if (!token) {
         return <Navigate to="/login" />;
     }
