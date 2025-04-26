@@ -74,7 +74,8 @@ const LibraryProfile = () => {
   }, []);
 
   if (loading) return <p className="loading-text">Yuklanmoqda...</p>;
-  if (error) return <p className="error-text">{error}</p>;
+  if (error) return <p className="error-text">Iltimos agar malumotlarni kormoqchi bolsangiz login oting !!!
+  <button style={{ border: "none", backgroundColor: "blue", color: "white", width:"150px", height: "80px", borderRadius: "10px" }} onClick={() => window.location.href = "/login"}>Login</button></p>;
 
   return (
     <>
