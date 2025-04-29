@@ -19,11 +19,10 @@ const queryClient = new QueryClient();
 const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
     const access_token = localStorage.getItem('access_token');
     if (!access_token) {
-        return <Navigate to="/login" />;
+        return <Navigate to="/login" />;//shota xato bor edi access tokeni
     }
     return <>{children}</>;
 };
-
 
 const App = () => {
 
